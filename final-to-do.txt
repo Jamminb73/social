@@ -1,0 +1,76 @@
+TO DO FOR PROJECT
+
+* Create Project
+* Create templates folder
+* Create static folder
+* Create base.html and index.html and test.html
+* Create accounts, groups, and posts applications
+* Add urls.py to each of the apps ( urlpatterns=[])
+
+--- Setting up Accounts ---
+* Create models.py in accounts
+* Set-up settings.py file
+* Do migrations to test everything
+* Runserver test
+* Create project views.py file
+* Create homepage view
+* Now set up the urls.py of the project
+* Runserver to test homepage views
+* Now it is time to create the login and the signup page!
+* Create templates folder inside accounts
+* Create forms.py for signup
+* Create the views.py for accounts and create login,logout, and signup classes
+* Now go back and add in links to navbar in base.html
+* Test it out, sign-up
+* Create a thanks.html page and url and template view
+* test again to make sure you have a thank you page
+
+------Posts-------
+
+don't forget 
+in environment
+
+pip install django-bootstrap3
+pip install misaka
+django-braces
+pip psycopg2-binary
+
+add to body of base.html
+
+<canvas id="canvas"></canvas>
+
+works right above </body> tag.
+
+
+various postgresql commands
+
+sudo su postgres
+service postgresql stop
+service postgresql start
+service postgresql status
+
+psql
+
+CREATE USER username WITH PASSWORD 'test123';
+ALTER USER username WITH PASSWORD 'test123';
+
+ALTER ROLE username WITH ROLE SUPERUSER;
+ALTER ROLE username WITH ROLE CREATEDB;
+ALTER ROLE username WITH ROLE CREATEROLE;
+
+CREATE DATABASE testing;
+DROP DATABASE testing;
+
+Database info example for postgres in django.
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'accounts,
+        'USER': 'socialadmin',
+        'PASSWORD': 'test123',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+
+
+
