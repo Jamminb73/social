@@ -1,4 +1,4 @@
-#!/home/jamminb/Code/simplesocial/myvenv/bin/python
+#!/home/jammin/social/myvenv/bin/python3
 
 import sys
 from os import path
